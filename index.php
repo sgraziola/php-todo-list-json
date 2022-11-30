@@ -20,16 +20,14 @@
             <h1 class="text-center">TODO LIST</h1>
             <div class="col-4">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item" v-for="todo in todos">{{todo}}</li>
+                    <li class="list-group-item" v-for="todo in todoList">{{todo}}</li>
                 </ul>
-                <form action="server.php" method="post">
-                    <div class="mb-3 d-flex mt-2">
-                        <input type="text" name="task" id="task" class="form-control rounded-0" placeholder="Add a new task" aria-describedby="taskHelper">
-                        <button type="submit" class="btn btn-primary rounded-0">
-                            Submit
-                        </button>
-                    </div>
-                </form>
+                <div class="mb-3 d-flex mt-2">
+                    <input type="text" name="todo" id="todo" class="form-control rounded-0" placeholder="Add a new todo" aria-describedby="taskHelper" v-model='todo' @keyup.enter="addTodo">
+                    <button type="submit" class="btn btn-primary rounded-0" @click="addTodo">
+                        Submit
+                    </button>
+                </div>
             </div>
         </div>
     </div>

@@ -17,10 +17,10 @@
 <body>
     <div id='app'>
         <div class="container d-flex flex-column align-items-center">
-            <h1 class="text-center">Tasks</h1>
+            <h1 class="text-center">TODO LIST</h1>
             <div class="col-4">
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item" v-for="todo in todoList">{{todo}}</li>
+                    <li class="list-group-item" v-for="todo in todos">{{todo}}</li>
                 </ul>
                 <form action="server.php" method="post">
                     <div class="mb-3 d-flex mt-2">

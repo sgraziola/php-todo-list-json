@@ -6,7 +6,8 @@ $todoList = [
     "Responsive Design",
     "Javascript",
     "PHP",
-    "Laravel"
+    "Laravel",
+    "MySql"
 ];
 
 header('Content-Type: application/json');

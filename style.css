@@ -1,3 +1,7 @@
 body {
   background-color: cadetblue;
 }
+
+.barred {
+  text-decoration: line-through;
+}
